@@ -12,7 +12,7 @@ namespace Tyuiu.SilinEV.Sprint2.Task1.V11.Lib
             q[2] = q[1] == q[0] || a < b;
             q[3] = q[1] && q[0];
             q[4] = !q[1];
-            q[5] = q[2] ^ q[1];
+            q[5] = q[0] ^ q[1];
 
             return q;
         }
