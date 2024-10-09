@@ -6,13 +6,13 @@ namespace Tyuiu.SilinEV.Sprint2.Task5.V8.Lib
     {
         public string FindDateOfPreviousDay(int m, int n)
         {
-            switch (n)
+            switch (m)
             {
                 case 1:
-                    switch (m)
+                    switch (n)
                     {
                         case 3:
-                            n = 28;
+                            m = 28;
                             break;
                         case 2:
                         case 4:
@@ -20,19 +20,19 @@ namespace Tyuiu.SilinEV.Sprint2.Task5.V8.Lib
                         case 8:
                         case 10:
                         case 12:
-                            n = 31;
+                            m = 31;
                             break;
                         default:
-                            n = 30;
+                            m = 30;
                             break;
                     }
 
-                    m -= 1;
+                    n -= 1;
                     break;
             }
             string a = Convert.ToString(n).Length == 2 ? Convert.ToString(n) : "0" + n;
             string s = Convert.ToString(m).Length == 2 ? Convert.ToString(m) : "0" + m;
-            return a + "." + s;
+            return s + "." + a;
         }
     }
 }
