@@ -26,8 +26,10 @@ namespace Tyuiu.SilinEV.Sprint2.Task5.V8.Lib
                             m = 30;
                             break;
                     }
-
                     n -= 1;
+                    break;
+                default:
+                    m -= 1;
                     break;
             }
             string a = Convert.ToString(n).Length == 2 ? Convert.ToString(n) : "0" + n;
