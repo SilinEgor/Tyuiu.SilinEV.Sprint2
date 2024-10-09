@@ -8,11 +8,11 @@ namespace Tyuiu.SilinEV.Sprint2.Task7.V12.Lib
         {
             if (x < 0)
             {
-                return ((2 - x < y) && (y < x * x)) ? true : false;
+                return ((2 - x <= y) && (y <= x * x)) ? true : false;
             }
             else
             {
-                return ((y > 0) && (y < 2 - x) && (y < x * x)) ? true : false;
+                return ((0 <= y) && (y <= 2 - x) && (y <= x * x)) ? true : false;
             }
         }
     }
