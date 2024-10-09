@@ -17,7 +17,7 @@ namespace Tyuiu.SilinEV.Sprint2.Task6.V14.Lib
                 6 => "Суббота",
                 7 => "Воскресенье"
             };
-            throw new NotImplementedException();
+            return s;
         }
     }
 }
