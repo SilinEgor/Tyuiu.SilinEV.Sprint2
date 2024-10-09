@@ -8,7 +8,7 @@ namespace Tyuiu.SilinEV.Sprint2.Task3.V27.Lib
         {
             if (x > 0)
             {
-                return Math.Round(x * Math.Pow(x + 1 / (Math.Sin(x * x) + x - 0.5), x), 3);
+                return Math.Round(x * Math.Pow((x + 1) / (Math.Sin(x * x) + x - 0.5), x), 3);
             }
             else if (x == 0)
             {
