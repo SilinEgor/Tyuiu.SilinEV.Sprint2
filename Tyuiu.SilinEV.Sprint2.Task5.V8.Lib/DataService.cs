@@ -26,7 +26,7 @@ namespace Tyuiu.SilinEV.Sprint2.Task5.V8.Lib
                             m = 30;
                             break;
                     }
-                    n -= 1;
+                    m -= 1;
                     break;
                 default:
                     m -= 1;
